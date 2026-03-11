@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблиці</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 10px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+        .highlight {
+            background-color: lightgreen;
+        }
+        .lightblue {
+            background-color: blue;
+        }
+        .red {
+            background-color: red;
+        }
+        .yellow {
+            background-color: yellow;
+        }
+        .pink {
+            background-color: pink;
+        }
+        .grey {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+<h3><i>Таблиця 1</i></h3>
+<table>
+    <tr>
+        <td>комірка 1</td> <td>комірка 3</td>
+    </tr>
+    <tr>
+        <td rowspan="2">комірка 4</td> <td>комірка 5</td> <td>комірка 6</td>
+    </tr>
+    <tr>
+        <td>комірка 8</td> <td>комірка 9</td>
+    </tr>
+</table>
+
+<h3><i>Таблиця 2</i></h3>
+<table>
+    <tr>
+        <td rowspan="2">комірка 1</td> <td>комірка 2</td> <td>комірка 3</td>
+    </tr>
+    <tr>
+        <td>комірка 5</td>
+    </tr>
+    <tr>
+        <td>комірка 8</td>
+    </tr>
+</table>
+
+<h3><i>Таблиця 3</i></h3>
+<table>
+    <tr>
+        <td>комірка 1</td>
+    </tr>
+    <tr>
+        <td rowspan="2">комірка 4</td> <td>комірка 5</td> <td>комірка 6</td>
+    </tr>
+    <tr>
+        <td>комірка 8</td> <td>комірка 9</td>
+    </tr>
+</table>
+
+<h3><i>Таблиця 4</i></h3>
+<table>
+    <tr>
+        <td colspan="2">22222</td> <td>33333</td>
+    </tr>
+    <tr>
+        <td rowspan="2">1111</td> <td>44444</td> <td rowspan="2">66666</td>
+    </tr>
+    <tr>
+        <td>55555</td>
+    </tr>
+    <tr>
+        <td>77777</td> <td colspan="2">88888</td>
+    </tr>
+    <tr>
+        <td colspan="3">99999</td>
+    </tr>
+</table>
+
+<h3><i>Таблиця 5</i></h3>
+<table>
+    <tr>
+        <th>номер</th> <th>теги</th>
+    </tr>
+    <tr>
+        <td>1</td> <td>p</td>
+    </tr>
+    <tr>
+        <td>2</td> <td>a</td> <td>для тексту</td>
+    </tr>
+    <tr>
+        <td>3</td> <td>b</td>
+    </tr>
+    <tr>
+        <td>4</td> <td>i</td>
+    </tr>
+    <tr>
+        <td>5</td> <td>table</td> <td>таблиця</td>
+    </tr>
+    <tr>
+        <td>6</td> <td>tr</td> <td>рядок таблиці</td>
+    </tr>
+</table>
+
+<h3><i>Таблиця 7</i></h3>
+<h2>Хімічні елементи</h2>
+<table>
+    <tr>
+        <th>Номер</th> <th>Назва</th> <th>Символ</th> <th>Рік</th> <th>Стаття</th>
+    </tr>
+    <tr>
+        <td>1</td> <td><a href="#">Водень</a></td> <td>H</td> <td>1766</td> <td>✏️</td>
+    </tr>
+    <tr>
+        <td>2</td> <td><a href="#">Гелій</a></td> <td>He</td> <td>1895</td> <td>✏️</td>
+    </tr>
+    <tr>
+        <td>3</td> <td><a href="#">Бор</a></td> <td>B</td> <td>1808</td> <td>✏️</td>
+    </tr>
+</table>
+<p><small><b style="color: red;">**</b> <i>В цьому завданні використано теги: table, tr, td, th, caption, h2, br, small, ins</i></small></p>
+
+<h3><i>Таблиця 8</i></h3>
+<table>
+    <colgroup>
+        <col span="2">
+        <col class="highlight">
+        <col class="red">
+        <col class="lightblue">
+        <col class="yellow">
+        <col class="pink">
+        <col class=grey>
+    </colgroup>
+    <tr>
+        <th>№</th> <th>Назва</th> <th>Ціна, грн.</th> <th>Кількість</th> <th>Виробник</th> <th>Дата виготовлення</th> <th>Дизайн</th> <th>Термін закінчення</th>
+    </tr>
+    <tr>
+        <td>1</td> <td>Олівець</td> <td>35</td> <td>5</td> <td>Німеччина</td> <td>03.04.2019</td> <td>Сірий</td> <td>03.04.2040</td>
+    </tr>
+    <tr>
+        <td>2</td> <td>Лінійка 20см</td> <td>25</td> <td>1</td> <td>Китай</td> <td>17.05.2018</td> <td>Прозоро зелена</td> <td>17.05.2400</td>
+    </tr>
+    <tr>
+        <td>3</td> <td>Ручка</td> <td>30</td> <td>5</td> <td>Україна</td> <td>03.07.2020</td> <td>Синій</td> <td>03.07.2100</td>
+    </tr>
+    <tr>
+        <td>4</td> <td>Гумка</td> <td>25</td> <td>2</td> <td>Китай</td> <td>10.10.2021</td> <td>Червоно-синій</td> <td>10.10.2100</td>
+    </tr>
+    <tr>
+        <td>5</td> <td>Зошит</td> <td>35</td> <td>15</td> <td>Україна</td> <td>03.10.2020</td> <td>З малюнками</td> <td>03.10.2024</td>
+    </tr>
+    <tr>
+        <td>6</td> <td>Фломастер</td> <td>40</td> <td>5</td> <td>Франція</td> <td>08.03.2017</td> <td>Різнокольорові</td> <td>08.03.2080</td>
+    </tr>
+</table>
+
+</body>
+</html>
