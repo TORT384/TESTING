@@ -5,38 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Таблиці</title>
     <style>
+        :root {
+            --main-border: 1px solid black;
+            --cell-padding: 5px;
+        }
+
         table {
             border-collapse: collapse;
             margin: 10px;
         }
+
         th, td {
-            border: 1px solid black;
-            padding: 5px;
+            border: var(--main-border);
+            padding: var(--cell-padding);
             text-align: center;
         }
-        .highlight {
-            background-color: lightgreen;
-        }
-        .lightblue {
-            background-color: blue;
-        }
-        .red {
-            background-color: red;
-        }
-        .yellow {
-            background-color: yellow;
-        }
-        .pink {
-            background-color: pink;
-        }
-        .grey {
-            background-color: grey;
-        }
+
+        /* Класи кольорів */
+        .highlight { background-color: lightgreen; }
+        .lightblue { background-color: blue; }
+        .red       { background-color: red; }
+        .yellow    { background-color: yellow; }
+        .pink      { background-color: pink; }
+        .grey      { background-color: grey; }
     </style>
 </head>
 <body>
-<h3><i>Таблиця 1</i></h3>
+
 <table>
+    <caption><h3><i>Таблиця 1</i></h3></caption>
     <tr>
         <td>комірка 1</td> <td>комірка 3</td>
     </tr>
@@ -48,8 +45,8 @@
     </tr>
 </table>
 
-<h3><i>Таблиця 2</i></h3>
 <table>
+    <caption><h3><i>Таблиця 2</i></h3></caption>
     <tr>
         <td rowspan="2">комірка 1</td> <td>комірка 2</td> <td>комірка 3</td>
     </tr>
@@ -61,8 +58,8 @@
     </tr>
 </table>
 
-<h3><i>Таблиця 3</i></h3>
 <table>
+    <caption><h3><i>Таблиця 3</i></h3></caption>
     <tr>
         <td>комірка 1</td>
     </tr>
@@ -74,8 +71,8 @@
     </tr>
 </table>
 
-<h3><i>Таблиця 4</i></h3>
 <table>
+    <caption><h3><i>Таблиця 4</i></h3></caption>
     <tr>
         <td colspan="2">22222</td> <td>33333</td>
     </tr>
@@ -93,22 +90,22 @@
     </tr>
 </table>
 
-<h3><i>Таблиця 5</i></h3>
 <table>
+    <caption><h3><i>Таблиця 5</i></h3></caption>
     <tr>
-        <th>номер</th> <th>теги</th>
+        <th>номер</th> <th>теги</th> <th>опис</th>
     </tr>
     <tr>
-        <td>1</td> <td>p</td>
+        <td>1</td> <td>p</td> <td>абзац</td>
     </tr>
     <tr>
-        <td>2</td> <td>a</td> <td>для тексту</td>
+        <td>2</td> <td>a</td> <td>для тексту (посилання)</td>
     </tr>
     <tr>
-        <td>3</td> <td>b</td>
+        <td>3</td> <td>b</td> <td>жирний текст</td>
     </tr>
     <tr>
-        <td>4</td> <td>i</td>
+        <td>4</td> <td>i</td> <td>курсив</td>
     </tr>
     <tr>
         <td>5</td> <td>table</td> <td>таблиця</td>
@@ -118,9 +115,9 @@
     </tr>
 </table>
 
-<h3><i>Таблиця 7</i></h3>
 <h2>Хімічні елементи</h2>
 <table>
+    <caption><h3><i>Таблиця 7</i></h3></caption>
     <tr>
         <th>Номер</th> <th>Назва</th> <th>Символ</th> <th>Рік</th> <th>Стаття</th>
     </tr>
@@ -136,8 +133,8 @@
 </table>
 <p><small><b style="color: red;">**</b> <i>В цьому завданні використано теги: table, tr, td, th, caption, h2, br, small, ins</i></small></p>
 
-<h3><i>Таблиця 8</i></h3>
 <table>
+    <caption><h3><i>Таблиця 8</i></h3></caption>
     <colgroup>
         <col span="2">
         <col class="highlight">
@@ -145,7 +142,7 @@
         <col class="lightblue">
         <col class="yellow">
         <col class="pink">
-        <col class=grey>
+        <col class="grey">
     </colgroup>
     <tr>
         <th>№</th> <th>Назва</th> <th>Ціна, грн.</th> <th>Кількість</th> <th>Виробник</th> <th>Дата виготовлення</th> <th>Дизайн</th> <th>Термін закінчення</th>
